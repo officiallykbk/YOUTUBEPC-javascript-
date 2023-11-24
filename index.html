@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- adding google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="shortcut icon" href="/youtubeicons/favicon.png" type="image/x-icon"> -->
+    <title>Youtube</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_start" style="width: 17.88%">
+        <div class="menu_section">
+          <!-- Youtube menu button -->
+          <div class="menu_container">
+            <img
+              class="menu"
+              src="https://img.icons8.com/ios/50/ffffff/menu--v7.png"
+              alt="menu button"
+            />
+          </div>
+          <!-- Youtube icon -->
+          <a href="index.html" style="padding-left: 15px"
+            ><img
+              src="youtubeicons/youtubegh3.svg"
+              alt="Youtube icon"
+              class="youtube_logo"
+              title="YouTube Home"
+          /></a>
+        </div>
+      </div>
+      <!-- Middle of the header section -->
+      <div class="header_center" style="width: 50%">
+        <!-- containing the search bar and the search button -->
+        <form
+          action="www.youtube.com/results"
+          method="get"
+          class="search_container"
+        >
+          <input type="text" placeholder="Search" />
+          <button class="search_btn">
+            <img
+              src="youtubeicons/searchicon.svg"
+              alt="search icon"
+              title="Search"
+            />
+          </button>
+        </form>
+        <!-- voice search button creation -->
+        <div class="voice_search_btn" title="Search with your voice">
+          <img
+            src="youtubeicons/voiceicon.svg"
+            style="height: 20px; width: 15px"
+          />
+        </div>
+      </div>
+      <!-- last section of the header section -->
+      <div class="header_end" style="width: 23.8%">
+        <div class="vert_line"></div>
+        <!-- youtube options menu button -->
+        <div class="header_popup" title="Settings">
+          <img src="youtubeicons/optionsicon.svg" alt="" style="color: white" />
+        </div>
+        <!-- signIn button -->
+        <button class="signIn_btn">
+          <img
+            width="20%"
+            src="youtubeicons/profileicon.svg"
+            alt="signIN profile"
+            style="padding-right: 20px"
+          />Sign in
+        </button>
+      </div>
+    </div>
+    <div class="menubar" id="hidden_menu">
+      <ul>
+        <li style="padding-top: 15px">
+          <div class="hidden_bar_container" title="Home">
+            <!-- home icon -->
+            <img
+              src="youtubeicons/homeicon.svg"
+              alt="home icon"
+              class="menu_img"
+            />
+            Home
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Shorts">
+            <!-- shorts icon -->
+            <img
+              src="youtubeicons/shorts.svg"
+              alt="youtube shorts icon"
+              class="menu_img"
+            />
+            Shorts
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Subscriptions">
+            <!-- subscriptions image -->
+            <img
+              src="youtubeicons/subscriptionsIcon.svg"
+              alt="subscriptions"
+              class="menu_img"
+            />
+            Subscriptions
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="hidden_bar_container" title="Library">
+            <!-- library image -->
+            <img src="youtubeicons/libraryIcon.svg" alt="" class="menu_img" />
+            Library
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="History">
+            <!-- history image -->
+            <img src="youtubeicons/history.svg" alt="" class="menu_img" />
+            History
+          </div>
+        </li>
+        <hr />
+        <button class="signIn_btn">
+          <img
+            width="20%"
+            src="youtubeicons/profileicon.svg"
+            alt="signIN profile"
+          />Sign in
+        </button>
+        <hr />
+        <h3>Explore</h3>
+        <li>
+          <div class="hidden_bar_container" title="Trending">
+            <img src="youtubeicons/trending.svg" alt="" class="menu_img" />
+            Trending
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Music">
+            <img src="youtubeicons/music.svg" alt="" class="menu_img" />
+            Music
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Gaming">
+            <img src="youtubeicons/game.svg" alt="" class="menu_img" />
+            Gaming
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Sports">
+            <img src="youtubeicons/sports.svg" alt="" class="menu_img" />
+            Sports
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="hidden_bar_container" title="Channels">
+            <img src="youtubeicons/add.svg" alt="" class="menu_img" />Browse
+            Channels
+          </div>
+        </li>
+        <hr />
+        <h3>More from Youtube</h3>
+        <li>
+          <div class="hidden_bar_container" title="YouTube Kids">
+            <img src="youtubeicons/ytkids.svg" alt="" class="menu_img" />YouTube
+            Kids
+          </div>
+        </li>
+        <hr />
+        <li>
+          <div class="hidden_bar_container" title="Settings">
+            <img src="youtubeicons/settings.svg" alt="" class="menu_img" />
+            Settings
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Report History">
+            <img src="youtubeicons/flag.svg" alt="" class="menu_img" />
+            Report history
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Help">
+            <img src="youtubeicons/help.svg" alt="" class="menu_img" />
+            Help
+          </div>
+        </li>
+        <li>
+          <div class="hidden_bar_container" title="Send Feedback">
+            <img src="youtubeicons/report.svg" alt="" class="menu_img" />
+            Send feedback
+          </div>
+        </li>
+        <hr />
+      </ul>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar_container" title="Home">
+        <!-- home icon -->
+        <img
+          src="youtubeicons/homeicon.svg"
+          alt="home icon"
+          class="sidebar_img"
+        />
+        Home
+      </div>
+      <div class="sidebar_container" title="Shorts">
+        <!-- shorts icon -->
+        <img
+          src="youtubeicons/shorts.svg"
+          alt="youtube shorts icon"
+          class="sidebar_img"
+        />
+        Shorts
+      </div>
+      <div class="sidebar_container" title="Subscriptions">
+        <!-- subscriptions image -->
+        <img
+          src="youtubeicons/subscriptionsIcon.svg"
+          alt="subscriptions"
+          class="sidebar_img"
+        />
+        Subscriptions
+      </div>
+      <div class="sidebar_container" title="Library">
+        <!-- library image -->
+        <img src="youtubeicons/libraryIcon.svg" alt="" class="sidebar_img" />
+        Library
+      </div>
+      <div class="sidebar_container" title="History">
+        <!-- history image -->
+        <img src="youtubeicons/history.svg" alt="" class="sidebar_img" />
+        History
+      </div>
+    </div>
+    <!-- Creating the videos section under the home -->
+    <section id="home">
+      <div class="home">
+        <div class="suggestions">
+          <div class="suggest">All</div>
+          <div class="suggest">Science</div>
+          <div class="suggest">Fun</div>
+          <div class="suggest">Music</div>
+          <div class="suggest">Trending</div>
+          <div class="suggest">Film critics</div>
+          <div class="suggest">Thrillers</div>
+          <div class="suggest">Programming</div>
+          <div class="suggest">Javascript</div>
+          <div class="suggest">Database Development</div>
+          <div class="suggest">Aws</div>
+          <div class="suggest">Power Rangers</div>
+          <div class="suggest">Animation</div>
+          <div class="suggest">Call Of Duty</div>
+          <div class="suggest">Apple</div>
+        </div>
+        <div class="videos">
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+            <div class="video_description">
+              <div class="section1">
+                <img
+                  src="theft.jpg"
+                  alt="korono"
+                  width="36"
+                  height="36"
+                  class="videoimage"
+                  style="margin-right: 10px"
+                />
+              </div>
+              <div class="section2">
+                <span class="Description1">
+                  <p><strong>How to make a successful theft</strong></p>
+                  <a class="channelname" href="#home">Korono</a>
+                </span>
+                <span class="Description2">
+                  <p class="views">95k views ⋅</p>
+                  <p class="days">2 days ago</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="videos1">
+            <video controls>
+              <source src="pixel.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="shorts">
+      <div class="Shorts">
+        <div class="shortvideo">
+          <video height="100%" width="360px" controls>
+            <source src="short.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reactions">
+          <div class="react"><img src="youtubeicons/like.svg" alt="" /></div>
+          Like
+          <div class="react"><img src="youtubeicons/dislike.svg" alt="" /></div>
+          Dislike
+          <div class="react"><img src="youtubeicons/comment.svg" alt="" /></div>
+          Comment
+          <div class="react"><img src="youtubeicons/share.svg" alt="" /></div>
+          Share
+          <div class="react">
+            <img src="youtubeicons/more_horiz.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscriptions">
+      <div class="subs_container">
+        <div class="Subscriptions">
+          <img src="youtubeicons/subscribe.svg" alt="" />
+          <h1 style="padding-top: 10px">Don't miss new videos</h1>
+          <p style="padding-top: 5px">Sign In to see more updates</p>
+          <button class="signIn_btn" style="margin-top: 5px">
+            <img
+              width="20%"
+              src="youtubeicons/profileicon.svg"
+              alt="signIN profile"
+              style="padding-right: 20px"
+            />Sign in
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="library">
+      <div class="lib_container">
+        <div class="Library">
+          <img src="youtubeicons/libraryIcon.svg" alt="" />
+          <h1 style="padding-top: 10px">Don't miss your favorite videos</h1>
+          <p style="padding-top: 5px">Sign In to see more liked videos</p>
+          <button class="signIn_btn" style="margin-top: 5px">
+            <img
+              width="20%"
+              src="youtubeicons/profileicon.svg"
+              alt="signIN profile"
+              style="padding-right: 20px"
+            />Sign in
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="history">
+      <div class="History_container">
+        <div class="part1">
+          <div class="history_options">
+            <img width="20" height="20" src="youtubeicons/trash.svg" alt="" />
+            Clear all watch history
+          </div>
+          <div class="history_options">
+            <img src="youtubeicons/pause.svg" alt="" />
+            Pause all watch history
+          </div>
+
+          <div class="history_options">
+            <img width="20" height="20" src="youtubeicons/trash.svg" alt="" />
+            Clear all search history
+          </div>
+
+          <div class="history_options">
+            <img src="youtubeicons/pause.svg" alt="" />
+            Pause all search history
+          </div>
+        </div>
+        <div class="part2">
+          <div class="History">
+            <img
+              width="360px"
+              height="170px"
+              src="youtubeicons/history.svg"
+              alt=""
+            />
+            <h1 style="padding-top: 10px">Don't miss your favorite videos</h1>
+            <p style="padding-top: 5px">Sign In to see more liked videos</p>
+            <button class="signIn_btn" style="margin-top: 5px">
+              <img
+                width="20%"
+                src="youtubeicons/profileicon.svg"
+                alt="signIN profile"
+                style="padding-right: 20px"
+              />Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="profile_popup"></div>
+  </body>
+  <script src="/dom_control.js"></script>
+</html>
